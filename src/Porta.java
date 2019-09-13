@@ -9,19 +9,19 @@ public class Porta {
     double dimensaoZ;
     
     //Métodos
-    void abre(){
+    public void setAbre(){
         this.aberta = true;
     }
     
-    void fecha(){
+    void setFecha(){
         this.aberta = false;
     }
     
-    void pinta(String cor) {
+    void setPinta(String cor) {
         this.cor = cor;
     }
     
-    boolean estaAberta(){
+    public boolean isAberta(){
         return aberta;
     }
 }

@@ -4,7 +4,7 @@ public class TestaAluno {
         
         //Criando objeto aluno
         Aluno a1 = new Aluno();
-        a1.cpf = "00000000000";
+        a1.setCPF("00000000000");
         
         //Criando objeto data
         Data d1 = new Data();
@@ -13,7 +13,7 @@ public class TestaAluno {
         d1.ano = 1998;
         
         //Atribuindo data de nascimento do aluno
-        a1.dataDeNascimento = d1;
+        a1.setData(d1);
         
         //Imprimindo dados do aluno
         System.out.println(a1.imprimir());

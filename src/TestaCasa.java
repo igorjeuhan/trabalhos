@@ -3,7 +3,7 @@ public class TestaCasa {
         
         //Criando objeto casa
         Casa casa1 = new Casa();
-        casa1.cor = "Verde";
+        casa1.setPinta("Verde");
         
         //Criando objetos porta
         Porta p1 = new Porta();
@@ -12,8 +12,8 @@ public class TestaCasa {
         p1.dimensaoX = 1.5;
         p1.dimensaoY = 2.5;
         p1.dimensaoZ = 0.15;
-        casa1.porta1 = p1;
-        casa1.porta1.abre();
+        casa1.setPorta1(p1);
+        casa1.setAbrePorta1();
        
         Porta p2 = new Porta();
         //Atribuindo dados
@@ -21,8 +21,8 @@ public class TestaCasa {
         p2.dimensaoX = 1.0;
         p2.dimensaoY = 2.0;
         p2.dimensaoZ = 0.30;
-        casa1.porta2 = p2;
-        casa1.porta2.abre();
+        casa1.setPorta2(p2);
+        casa1.setAbrePorta2();
         
         Porta p3 = new Porta();
         //Atribuindo dados
@@ -30,29 +30,29 @@ public class TestaCasa {
         p3.dimensaoX = 2.0;
         p3.dimensaoY = 3.5;
         p3.dimensaoZ = 1.0;
-        casa1.porta3 = p3;
-        casa1.porta3.abre();
+        casa1.setPorta3(p3);
+        casa1.setAbrePorta3();
         
         //Chamando Métodos
-        casa1.cor = "Laranja";
-        System.out.println("Cor da casa: " + casa1.cor + 
-                "\nPortas abertas: " + casa1.quantasPortasEstaoAbertas() + "\n");
+        casa1.setPinta("Laranja"); 
+        System.out.println("Cor da casa: " + casa1.getCor() + 
+                "\nPortas abertas: " + casa1.getQuantasPortasEstaoAbertas() + "\n");
         
-        casa1.cor = "Lilas";
-        casa1.porta1.abre();
-        casa1.porta2.abre();
-        casa1.porta3.fecha();
+        casa1.setPinta("Lilas"); 
+        casa1.setAbrePorta1();
+        casa1.setAbrePorta2();
+        casa1.setAbrePorta3();
         
-        System.out.println("Cor da casa: " + casa1.cor + 
-                "\nPortas abertas: " + casa1.quantasPortasEstaoAbertas() + "\n");
+        System.out.println("Cor da casa: " + casa1.getCor() + 
+                "\nPortas abertas: " + casa1.getQuantasPortasEstaoAbertas() + "\n");
         
-        casa1.cor = "Azul";
-        casa1.porta1.fecha();
-        casa1.porta2.fecha();
-        casa1.porta3.abre();
+        casa1.setPinta("Azul");
+        casa1.setFechaPorta1();
+        casa1.setFechaPorta2();
+        casa1.setFechaPorta3();
         
-        System.out.println("Cor da casa: " + casa1.cor + 
-                "\nPortas abertas: " + casa1.quantasPortasEstaoAbertas() + "\n");
+        System.out.println("Cor da casa: " + casa1.getCor() + 
+                "\nPortas abertas: " + casa1.getQuantasPortasEstaoAbertas() + "\n");
         
     }
 }

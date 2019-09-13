@@ -10,7 +10,7 @@ public class TestaPorta {
         porta1.dimensaoZ = 0.3;
         
         String estado;
-        if (porta1.estaAberta()) {
+        if (porta1.isAberta()) {
            estado = "Aberta";
         }else {
            estado = "Fechada";
@@ -23,15 +23,15 @@ public class TestaPorta {
         System.out.println(dados);
         
         //Chamando métodos
-        porta1.abre();
+        porta1.setAbre();
         
-        if (porta1.estaAberta()) {
+        if (porta1.isAberta()) {
            estado = "Aberta";
         }else {
            estado = "Fechada";
         }
         
-        porta1.pinta("Vermelha");
+        porta1.setPinta("Vermelha");
         porta1.dimensaoX = 2.0;
         porta1.dimensaoY = 3.0;
         porta1.dimensaoZ = 0.15;
