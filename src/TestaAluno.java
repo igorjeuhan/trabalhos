@@ -8,9 +8,9 @@ public class TestaAluno {
         
         //Criando objeto data
         Data d1 = new Data();
-        d1.dia = 29;
-        d1.mes = 4;
-        d1.ano = 1998;
+        d1.setDia(29);
+        d1.setMes(4);
+        d1.setAno(1998);
         
         //Atribuindo data de nascimento do aluno
         a1.setData(d1);

@@ -44,7 +44,7 @@ public class Casa {
         this.porta3.setFecha();
     }
     
-    public void setPinta(String cor){
+    public void setCor(String cor){
         this.cor = cor;
     }
     
