@@ -4,6 +4,12 @@ public class Aluno {
     private String cpf;
     private Data dataDeNascimento;
     
+    //Construtor
+    public Aluno (String cpf, Data data) {
+        this.setCPF(cpf);
+        this.setData(data);
+    }
+    
     //Métodos
     String imprimir (){
         String dados = "CPF: " + cpf + " Data de nascimento: " + dataDeNascimento.imprimir();

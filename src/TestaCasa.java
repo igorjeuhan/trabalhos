@@ -2,11 +2,11 @@ public class TestaCasa {
     public static void main(String[] args) {
         
         //Criando objeto casa
-        Casa casa1 = new Casa();
-        casa1.setCor("Verde");
+        Casa casa1 = new Casa("verde");
         
         //Criando objetos porta
         Porta p1 = new Porta();
+        
         //Atribuindo dados
         p1.setCor("Azul");
         p1.setDimensaoX(1.5);

@@ -6,8 +6,12 @@ public class Casa {
     private Porta porta2;
     private Porta porta3;
     
-    //Métodos
+    public Casa (String c) {
+        
+        this.setCor(c);
+    }
     
+    //Métodos
     public void setPorta1(Porta porta1) {
         this.porta1 = porta1;
     }

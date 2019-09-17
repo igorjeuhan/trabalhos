@@ -5,6 +5,12 @@ public class Data {
     private int mes;
     private int ano;
     
+    public Data (int d, int m, int a) {
+        this.setDia(d);
+        this.setMes(m);
+        this.setAno(a);
+    }
+    
     //Métodos
     void setDia(int dia){
         this.dia = dia;
