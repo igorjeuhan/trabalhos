@@ -3,6 +3,7 @@ public class Cliente {
     private String nome;
     private String cpf;
     
+    //Construtor
     public Cliente (String nome, String cpf) {
         
         this.setNome(nome);

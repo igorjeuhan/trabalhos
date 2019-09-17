@@ -7,7 +7,8 @@ public class TestaCliente {
         //c1.setNome("Igor Jeuhan");
         //c1.setCpf("00000000000");
         
-        System.out.println("Nome: " + c1.getNome() + "\n" + "CPF: " + c1.getCpf());
+        System.out.println("Nome: " + c1.getNome() + "\n" + "CPF: " 
+                + c1.getCpf());
     }
     
 }
