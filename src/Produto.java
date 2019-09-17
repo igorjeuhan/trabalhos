@@ -4,6 +4,12 @@ public class Produto {
     private double preco;
     private String nome;
     
+    //Construtor
+    public Produto (String n, double preco) {
+        this.setNome(n);
+        this.setPreco(preco);   
+    }
+    
     //Métodos
     public void setNome(String nome){
         this.nome = nome;

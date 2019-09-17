@@ -8,6 +8,15 @@ public class Porta {
     private double dimensaoY;
     private double dimensaoZ;
     
+    //Construtor
+    public Porta (String cor, double dX, double dY, double dZ) {
+        this.setCor(cor);
+        this.setDimensaoX(dX);
+        this.setDimensaoY(dY);
+        this.setDimensaoZ(dZ);
+        
+    }
+    
     //Métodos
     public void setDimensaoX(double x){
         this.dimensaoX = x;

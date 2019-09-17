@@ -4,6 +4,12 @@ public class Pessoa {
     private String nome;
     private int idade;
     
+    //Construtor
+    public Pessoa(String nome, int idade) {
+        this.setNome(nome);
+        this.setIdade(idade);
+    }
+    
     //Métodos
     void setNome(String nome){
         this.nome = nome;

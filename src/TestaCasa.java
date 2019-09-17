@@ -2,34 +2,22 @@ public class TestaCasa {
     public static void main(String[] args) {
         
         //Criando objeto casa
-        Casa casa1 = new Casa();
-        casa1.setCor("Verde");
+        Casa casa1 = new Casa("verde");
         
         //Criando objetos porta
-        Porta p1 = new Porta();
+        Porta p1 = new Porta("Azul", 1.5, 2.5, 0.15);
+        
         //Atribuindo dados
-        p1.setCor("Azul");
-        p1.setDimensaoX(1.5);
-        p1.setDimensaoY(2.5);
-        p1.setDimensaoZ(0.15);
         casa1.setPorta1(p1);
         casa1.setAbrePorta1();
        
-        Porta p2 = new Porta();
+        Porta p2 = new Porta("Violeta", 1.0, 2.0, 0.30);
         //Atribuindo dados
-        p2.setCor("Violeta");
-        p2.setDimensaoX(1.0);
-        p2.setDimensaoY(2.0);
-        p2.setDimensaoZ(0.30);
         casa1.setPorta2(p2);
         casa1.setAbrePorta2();
         
-        Porta p3 = new Porta();
+        Porta p3 = new Porta("Cinza", 2.0, 3.5, 1.0);
         //Atribuindo dados
-        p3.setCor("Cinza");
-        p3.setDimensaoX(2.0);
-        p3.setDimensaoY(3.5);
-        p3.setDimensaoZ(1.0);
         casa1.setPorta3(p3);
         casa1.setAbrePorta3();
         
